@@ -1,30 +1,26 @@
-var userChoices = document.getElementsByTagName('input[type:radio]');
-      var questions = 
-      [
-        {
-          question: "What is the capital of United Kingdom?",
-          choices: ["Manchester", "Birmingham", "London", "Birmingham"],
-          answer: 2
-        },
-        
-        {
-          question: "What is the capital of United States?",
-          choices: ["California", "New York", "Miami", "Florida"],
-          answer: 1
-        }
-        
-        
-      ];
-      
-      for ( var i = 0; i < questions.length; i++ ) {
-        var question = questions[i].question;
-        document.write ( question );
-        var options = questions[i].choices;
-        for ( var opt in options ) {
-           for ( var radios in userChoices ) {
-             userChoices[radios].value = options[opt];
-             
-           }
-        }
-        
-      }
+var questions = [
+      {
+           prompt: "What color are apples?\n(a) Red/Green\n\ (b) Purple\n(c) Orange",
+           answer: "a"
+     },
+     {
+          prompt: "What color are Bananas?\n(a) Teal\n\ (b) Magenta\n(c) Yellow",
+          answer: "c"
+     },
+     {
+          prompt: "What color are strawberries?\n(a) Yellow\n\ (b) Red\n(c) Blue",
+          answer: "a"
+     }
+     ];
+
+var score = 0;
+for(var i = 0; i < questions.length; i++){
+     var response = window.prompt(questions[i].prompt);
+     if(response == questions[i].answer){
+          score++;
+          alert("Correct!");
+     } else {
+          alert("WRONG!");
+     }
+}
+alert("you got " + score + "/" + questions.length);
