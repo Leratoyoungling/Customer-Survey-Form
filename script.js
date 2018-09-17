@@ -9,7 +9,7 @@ var questions = [
      },
      {
           prompt: "What color are strawberries?\n(a) Yellow\n\ (b) Red\n(c) Blue",
-          answer: "a"
+          answer: "b"
      }
      ];
 
