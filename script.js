@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(){
 var questions = [
       {
            prompt: "What color are apples?\n(a) Red/Green\n (b) Purple\n(c) Orange",
@@ -25,4 +24,4 @@ for(var i = 0; i < questions.length; i++){
      }
 }
 document.write("you got " + score + "/" + questions.length);
-}
+
