@@ -1,15 +1,15 @@
 var questions = [
       {
-           prompt: "What color are apples?\n(a) Red/Green\n (b) Purple\n(c) Orange",
-           answer: "a"
+           prompt: "What color are apples?\n(1) Red/Green\n (2) Purple\n(3) Orange",
+           answer: "1"
      },
      {
-          prompt: "What color are Bananas?\n(a) Teal\n (b) Magenta\n(c) Yellow",
-          answer: "c"
+          prompt: "What color are Bananas?\n(1) lime\n (2) Magenta\n(3) Yellow",
+          answer: "3"
      },
      {
-          prompt: "What color are strawberries?\n(a) Yellow\n (b) Red\n(c) Blue",
-          answer: "b"
+          prompt: "What color are strawberries?\n(1) Yellow\n (2) Red\n(3) Blue",
+          answer: "2"
      }
      ];
 
