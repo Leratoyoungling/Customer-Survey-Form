@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(){
 var questions = [
       {
            prompt: "What color are apples?\n(a) Red/Green\n (b) Purple\n(c) Orange",
@@ -18,9 +19,10 @@ for(var i = 0; i < questions.length; i++){
      var response = window.prompt(questions[i].prompt);
      if(response == questions[i].answer){
           score++;
-          alert("Correct!");
+         document.write("Correct!");
      } else {
-          alert("WRONG!");
+          document.write("WRONG!");
      }
 }
-alert("you got " + score + "/" + questions.length);
+document.write("you got " + score + "/" + questions.length);
+}
