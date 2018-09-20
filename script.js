@@ -1,27 +1,14 @@
-var questions = [
-      {
-           prompt: "What color are apples?\n(1) Red/Green\n (2) Purple\n(3) Orange",
-           answer: "1"
-     },
-     {
-          prompt: "What color are Bananas?\n(1) lime\n (2) Magenta\n(3) Yellow",
-          answer: "3"
-     },
-     {
-          prompt: "What color are strawberries?\n(1) Yellow\n (2) Red\n(3) Blue",
-          answer: "2"
-     }
-     ];
 
-var score = 0;
-for(var i = 0; i < questions.length; i++){
-     var response = document.prompt(questions[i].prompt);
-     if(response == questions[i].answer){
-          score++;
-         document.write("Correct!");
-     } else {
-          document.write("WRONG!");
-     }
-}
-document.write("you got " + score + "/" + questions.length);
+var question001 = ["What color are apples?"];
+var choices001 = ["<input onclick=correct001() name=button001 type=radio />Red/Green<br /><input onclick=incorrect001() name=button001 type=radio />Purple<br /><input onclick=incorrect001() name=button001 type=radio />Orange<br />"];
 
+var question002 = ["What color are Bananas?"];
+var choices002 = ["<input onclick=incorrect002() name=button002 type=radio />lime<br /><input onclick=incorrect002() name=button002 type=radio />Magenta<br /><input onclick=correct002() name=button002 type=radio />Yellow<br />"];
+
+var question003 = ["What color are strawberries?"];
+var choices003 = ["<input onclick=incorrect003() name=button003 type=radio />Yellow<br /><input onclick=incorrect003() name=button003 type=radio />Red<br /><input onclick=correct003() name=button003 type=radio />Blue<br />"];
+
+windows.onload = function () {
+      message001.innerHTML = question001;
+      options001.innerHTML = choices001;
+      click001.innerHTML = "<button onclick=set002()>Submit</button"/>
