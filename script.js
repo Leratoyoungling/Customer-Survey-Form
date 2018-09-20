@@ -15,12 +15,12 @@ var questions = [
 
 var score = 0;
 for(var i = 0; i < questions.length; i++){
-     var response = document.prompt(questions[i].prompt);
+     var response = window.prompt(questions[i].prompt);
      if(response == questions[i].answer){
           score++;
-         document.write("Correct!");
+         window.write("Correct!");
      } else {
-          document.write("WRONG!");
+          window.write("WRONG!");
      }
 }
 document.write("you got " + score + "/" + questions.length);
