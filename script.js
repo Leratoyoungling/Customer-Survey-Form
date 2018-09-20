@@ -23,5 +23,5 @@ for(var i = 0; i < questions.length; i++){
           window.write("WRONG!");
      }
 }
-document.write("you got " + score + "/" + questions.length);
+window.write("you got " + score + "/" + questions.length);
 
