@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="./script.js"></script>
     <title>Survey</title>
-    
 </head>
-  <body>
-    
-    <H1 id="title">Survey Form</H1>
+
+<body>
+
+<H1 id="title">Survey Form</H1>
 <div id="form-outer">
   <p id="description">
     <strong>Please rate our service</strong></p>
-  <form id="survey-form">
+  <form id="survey-form" method="GET"
+ action="https://cors-anywhere.herokuapp.com/">
     <div class="rowTab">
       <div class="labels">
         <label id="name-label" for="name">*Name:</label>
@@ -95,7 +97,7 @@
   
     <div class="rightTab">
       <ul style="list-style: none;">
-      <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Response Time</label></li>
+      <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Response Time</label</li>
       <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Service Delivery</label></li>
       <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Staff Interaction</label></li>
       <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Service Prices</label></li>
@@ -116,12 +118,17 @@
     <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
   </div>
 </div>
-      <br/>
-      
-<button class="btn btn-secondary" onClick="submit()">Submit</button>
-  
+    
+<button id="submit" type="submit">Submit</button>
+ 
 </form>
 </div>
+      
+    </body>
+</html>   
+        
+        
+        
+          
  
-  </body>
-</html>
+  
