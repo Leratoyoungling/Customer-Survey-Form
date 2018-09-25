@@ -1,4 +1,4 @@
 submit = function(){
-    alert("You got swag!");
+    alert("Survey Submitted!");
 }
 
