@@ -1,4 +1,4 @@
-Submit = function(){
+function submit() {
     var Name = document.getElementById('name').value;
     var Email = document.getElementById('Email').value;
     
