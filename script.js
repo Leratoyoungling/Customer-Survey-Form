@@ -1,4 +1,4 @@
-submit = function(){
+Submit = function(){
     alert("Survey Submitted!");
 }
 
