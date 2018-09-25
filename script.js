@@ -1,5 +1,4 @@
-submit = function(){
-      alert("Submitted");
-                                       
+getSwag = function(){
+    alert("You got swag!");
 }
 
