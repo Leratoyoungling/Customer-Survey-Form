@@ -1,4 +1,4 @@
-function submit() {
+function results() {
     var Name = document.getElementById('name').value;
     var Email = document.getElementById('Email').value;
     
