@@ -1,12 +1,7 @@
-        Submit = function()
-          {
-    if(form.inputfield.value == "") {
-      alert("Error: Input is empty!");
-      form.inputfield.focus();
-      return false;
-    }
-    return true;
-  }
+Submit = function(){
+    alert("Survey Submitted!");
+    alert("Thank You for your participation");
+}
 
 
 
