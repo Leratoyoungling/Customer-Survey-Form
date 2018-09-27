@@ -8,18 +8,18 @@ Submit = function(){
          isValid = false;
     });
     if( isValid ) {
-       $('#submitBtn').prop('disabled', false);
+       $('.btn btn-secondary').prop('disabled', false);
     } else {
-       $('#submitBtn').prop('disabled', true);
+       $('.btn btn-secondary').prop('disabled', true);
     };
-    $('#submitBtn').click(function() {
+    $('.btn btn-secondary').click(function() {
         var isValid = true;
          $('input,textarea,select').filter('[required]:visible').each(function() {
           if ( $(this).val() === '' )
              isValid = false;
         });
         if( isValid ) {
-           $("#myForm")[0].submit(); 
+           $("#survey-form")[0].submit(); 
        };
 
     });
