@@ -16,7 +16,7 @@
 <div id="form-outer">
   <p id="description">
     <strong>Please rate our service</strong></p>
-  <form>
+  <form onsubmit="return results();" method="post" action="mailto:lerato.phokompe@younglings.africa">
     <div class="rowTab">
       <div class="labels">
         <label id="name-label" for="name">*Name:</label>
@@ -116,7 +116,7 @@
     <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
   </div>
 </div>
-      <button id="submit" onClick="submit()" onsubmit="return results();" method="post" action="mailto:lerato.phokompe@younglings.africa">Submit</button>
+      <button id="submit" onClick="Submit()">Submit</button>
 </form>
 </div>
     </body>
