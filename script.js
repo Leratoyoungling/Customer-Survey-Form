@@ -1,5 +1,6 @@
 Submit = function(){
-    document.write("Survey Submitted!, " "Thank You for your participation.");
+    alert("Survey Submitted!");
+    alert("Thank You for your participation");
 }
 
 
